@@ -11,15 +11,18 @@ int main()
     int *ptr = nullptr; // store noting
     cout << ptr;        // print 0;
     cout << *ptr;       // print noting
-    
-    
+
     int arr[] = {10, 20, 30};
     int *p = arr;
 
     cout << *p << endl;       // 10
     cout << *(p + 1) << endl; // 20
 
+    int *arr = new int[5]; // dyanmic memory allocation
 
-    int* arr = new int[5]; //dyanmic memory allocation
+    int a = 10;
+    int *p = &a;
+    int **q = &p; //double is use to store address of other pointer
 
+    cout << **q; // 10
 }
